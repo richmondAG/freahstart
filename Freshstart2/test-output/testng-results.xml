@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-03T03:19:59 EST" name="Default suite" finished-at="2023-01-03T03:20:02 EST" duration-ms="3264">
+  <suite started-at="2023-01-03T03:59:31 EST" name="Default suite" finished-at="2023-01-03T03:59:36 EST" duration-ms="5121">
     <groups>
     </groups>
-    <test started-at="2023-01-03T03:19:59 EST" name="Default test" finished-at="2023-01-03T03:20:02 EST" duration-ms="3264">
+    <test started-at="2023-01-03T03:59:31 EST" name="Default test" finished-at="2023-01-03T03:59:36 EST" duration-ms="5121">
       <class name="testcase.Testcase1">
-        <test-method is-config="true" signature="basetest()[pri:0, instance:testcase.Testcase1@40ef3420]" started-at="2023-01-03T03:19:59 EST" name="basetest" finished-at="2023-01-03T03:20:02 EST" duration-ms="2995" status="PASS">
+        <test-method is-config="true" signature="basetest()[pri:0, instance:testcase.Testcase1@1ab3a8c8]" started-at="2023-01-03T03:59:31 EST" name="basetest" finished-at="2023-01-03T03:59:34 EST" duration-ms="2937" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basetest -->
-        <test-method signature="test1()[pri:0, instance:testcase.Testcase1@40ef3420]" started-at="2023-01-03T03:20:02 EST" name="test1" finished-at="2023-01-03T03:20:02 EST" duration-ms="28" status="PASS">
+        <test-method signature="test1()[pri:0, instance:testcase.Testcase1@1ab3a8c8]" started-at="2023-01-03T03:59:34 EST" name="test1" finished-at="2023-01-03T03:59:34 EST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testcase.Testcase1@40ef3420]" started-at="2023-01-03T03:20:02 EST" name="teardown" finished-at="2023-01-03T03:20:02 EST" duration-ms="197" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcase.Testcase1@1ab3a8c8]" started-at="2023-01-03T03:59:34 EST" name="teardown" finished-at="2023-01-03T03:59:34 EST" duration-ms="257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="basetest()[pri:0, instance:testcase.Testcase1@1ab3a8c8]" started-at="2023-01-03T03:59:34 EST" name="basetest" finished-at="2023-01-03T03:59:36 EST" duration-ms="1671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basetest -->
+        <test-method signature="test2()[pri:0, instance:testcase.Testcase1@1ab3a8c8]" started-at="2023-01-03T03:59:36 EST" name="test2" finished-at="2023-01-03T03:59:36 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testcase.Testcase1@1ab3a8c8]" started-at="2023-01-03T03:59:36 EST" name="teardown" finished-at="2023-01-03T03:59:36 EST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
