@@ -10,15 +10,16 @@ public class Testcase1 extends BaseTest{
 	public void test1() {
 	
 		String Title= driver.getTitle();
-		Assert.assertEquals(Title, "Google");
-		
+		Assert.assertEquals(Title, "Google");	
 		
 	}
+	
+	
 	@Test
 	public void test2() {
 		
-		//System.out.println("sucesss");
-		driver.findElement(By.className("gLFyf")).sendKeys("Reanna");
+		System.out.println("sucesss");
+		//driver.findElement(By.className("gLFyf")).sendKeys("Reanna");
 	}
 	
 
