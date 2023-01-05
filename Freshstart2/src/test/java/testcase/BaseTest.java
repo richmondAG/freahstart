@@ -21,7 +21,7 @@ public class BaseTest {
 
 	
 	
-	WebDriver driver;
+	WebDriver driver = null;
 	//Properties prop = new Properties();
 	
 	
