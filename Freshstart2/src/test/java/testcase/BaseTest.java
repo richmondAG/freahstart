@@ -22,7 +22,7 @@ public class BaseTest {
 	
 	
 	WebDriver driver= null;
-	Properties prop = new Properties();
+	//Properties prop = new Properties();
 	
 	
       @BeforeMethod
