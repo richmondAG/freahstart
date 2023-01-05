@@ -21,7 +21,7 @@ public class BaseTest {
 
 	
 	
-	WebDriver driver= null;
+	WebDriver driver;
 	//Properties prop = new Properties();
 	
 	
@@ -31,7 +31,7 @@ public class BaseTest {
     		
 		
 			
-			  if(System.getProperty("browser").equals("Chrome")) {
+			  if(System.getProperty("browser").equalsIgnoreCase("Chrome")) {
 		  			
 		  			
 		  			WebDriverManager.chromedriver().setup();
@@ -50,6 +50,8 @@ public class BaseTest {
 		  			WebDriverManager.iedriver().setup();
 		  			driver= new InternetExplorerDriver();
 		  		}
+			  
+				driver.manage().window().maximize();
 			  driver.get(System.getProperty("url"));
 			
 				driver.get("https://www.google.com/");
