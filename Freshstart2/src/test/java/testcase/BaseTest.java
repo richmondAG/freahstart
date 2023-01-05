@@ -28,14 +28,10 @@ public class BaseTest {
       @BeforeMethod
 	public void basetest() throws IOException {
     	  
-    		try {
-    	  
-    	  FileInputStream fil = new FileInputStream("C:\\Users\\richm\\git\\Fresh\\Freshstart2\\Configuration\\config.properties");
-  	      	prop.load(fil);
-    	  String browsername= prop.getProperty("browser");
+    		
 		
 			
-			  if(browsername.equals("Chrome")) {
+			  if(System.getProperty("browser").equals("Chrome")) {
 		  			
 		  			
 		  			WebDriverManager.chromedriver().setup();
@@ -43,17 +39,18 @@ public class BaseTest {
 		  			
 		  		}
 		  		
-		  		else if(browsername.equalsIgnoreCase("Firefox")) {
+		  		else if(System.getProperty("browser").equalsIgnoreCase("Firefox")) {
 		  			WebDriverManager.firefoxdriver().setup();
 		  			driver= new FirefoxDriver();
 		  			
 		  		}
 		  		
-		  		else if(browsername.equalsIgnoreCase("IE")) {
+		  		else if(System.getProperty("browser").equalsIgnoreCase("IE")) {
 		  			
 		  			WebDriverManager.iedriver().setup();
 		  			driver= new InternetExplorerDriver();
 		  		}
+			  driver.get(System.getProperty("url"));
 			
 				driver.get("https://www.google.com/");
 
@@ -61,10 +58,6 @@ public class BaseTest {
 				
 			
 	
-    		} catch (Exception e) {
-    			// TODO Auto-generated catch block
-    			e.printStackTrace();
-    		}
     		
 		
     	
