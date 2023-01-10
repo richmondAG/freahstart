@@ -47,45 +47,55 @@ public class BaseTest {
 	
 	
 	
-      @BeforeMethod
-	public void basetest() throws IOException {
-    	  
-    	  FileInputStream fil= new FileInputStream(System.getProperty("user.dir")+"/Configuration/conf.properties");
-    	   prop.load(fil);
-		
-			
-			  if(prop.getProperty("browser").equalsIgnoreCase("Chrome")) {
-		  			
-		  			
-		  			WebDriverManager.chromedriver().setup();
-		  			driver= new ChromeDriver();
-		  			
-		  		}
-		  		
-		  		else if(prop.getProperty("browser").equalsIgnoreCase("Firefox")) {
-		  			WebDriverManager.firefoxdriver().setup();
-		  			driver= new FirefoxDriver();
-		  			
-		  		}
-		  		
-		  		else if(prop.getProperty("browser").equalsIgnoreCase("IE")) {
-		  			
-		  			WebDriverManager.iedriver().setup();
-		  			driver= new InternetExplorerDriver();
-		  		}
-			  
-				driver.manage().window().maximize();
-			 // driver.get(System.getProperty("url"));
-			
-				driver.get("https://www.google.com/");
-
-				driver.manage().window().maximize();
-				
-			
+//      @BeforeMethod
+//	public void basetest() throws IOException {
+//    	  
+//    	  FileInputStream fil= new FileInputStream(System.getProperty("user.dir")+"/Configuration/conf.properties");
+//    	   prop.load(fil);
+//		
+//			
+//			  if(prop.getProperty("browser").equalsIgnoreCase("Chrome")) {
+//		  			
+//		  			
+//		  			WebDriverManager.chromedriver().setup();
+//		  			driver= new ChromeDriver();
+//		  			
+//		  		}
+//		  		
+//		  		else if(prop.getProperty("browser").equalsIgnoreCase("Firefox")) {
+//		  			WebDriverManager.firefoxdriver().setup();
+//		  			driver= new FirefoxDriver();
+//		  			
+//		  		}
+//		  		
+//		  		else if(prop.getProperty("browser").equalsIgnoreCase("IE")) {
+//		  			
+//		  			WebDriverManager.iedriver().setup();
+//		  			driver= new InternetExplorerDriver();
+//		  		}
+//			  
+//				driver.manage().window().maximize();
+//			 // driver.get(System.getProperty("url"));
+//			
+//				driver.get("https://www.google.com/");
+//
+//				driver.manage().window().maximize();
+//				
+//			
+//	
+//    		
+//		
+//    	
+//		
+//	}
 	
-    		
+	public void setu() {
 		
-    	
+		
+		WebDriverManager.chromedriver().setup();
+		driver= new ChromeDriver();
+		driver.get("https://www.google.com/");
+        driver.manage().window().maximize();
 		
 	}
 	
