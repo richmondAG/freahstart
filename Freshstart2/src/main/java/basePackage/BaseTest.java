@@ -88,7 +88,7 @@ public class BaseTest {
 //    	
 //		
 //	}
-	
+	@BeforeMethod
 	public void setu() {
 		
 		
