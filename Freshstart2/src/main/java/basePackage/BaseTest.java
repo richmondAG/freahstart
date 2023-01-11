@@ -100,7 +100,7 @@ public class BaseTest {
 	}
 	
 	@AfterMethod
-	public void teardown() throws IOException {
+	public void teardown(ITestResult result) throws IOException {
 		
 		driver.quit();
 		
