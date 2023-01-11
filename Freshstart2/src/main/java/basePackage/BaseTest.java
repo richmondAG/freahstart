@@ -88,7 +88,7 @@ public class BaseTest {
 //    	
 //		
 //	}
-	@BeforeMethod
+	@BeforeSuite
 	public void setu() {
 		
 		
@@ -99,8 +99,8 @@ public class BaseTest {
 		
 	}
 	
-	@AfterMethod
-	public void teardown(ITestResult result) throws IOException {
+	@AfterSuite
+	public void teardown() throws IOException {
 		
 		driver.quit();
 		
