@@ -19,7 +19,7 @@
         <!-- report name - displayed at top-nav -->
         <reportName>OrangeHRMProject Report
          <![CDATA[
-                <img src='C:/Users/richm/git/Fresh/Freshstart2/Logo/ATI.png'/>
+                <img src='http://localhost:8080/job/WithEmailExtentReport/ws/Freshstart2/Logo/'/>
             ]]>
         </reportName>
         
